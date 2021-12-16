@@ -3,6 +3,7 @@ A simple notes web-app developed by Anurag Pathak, for learning purpose.
 - React and React-router-dom used in making this app.
 - Browser local storage is used to retain the notes.
 - React-bootstrap is also used.
+- This app is deployed on (Netlify)[https://notes-app-anurag.netlify.app].
 
 ## Testing
 In the project directory, you can run:
