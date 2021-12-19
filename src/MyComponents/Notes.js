@@ -7,7 +7,7 @@ export default function Notes(props) {
     marginTop: "50px"}}>
       {props.notes.length ? props.notes.map((note, i) => {
         return <NoteItem note={note} key={i} onDelete={props.onDelete}/>
-      }) : "Nothing to show"}
+      }) : <h4 className="text-center">No notes yet.</h4>}
     </div>
   )
 }

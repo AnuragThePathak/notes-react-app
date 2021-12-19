@@ -9,7 +9,8 @@ function About() {
 
       <ul className={"container"}>
         <li>React and React-router-dom used in making this app.</li>
-        <li>Apart from mentioned browser local storage is also used to retain the notes.
+        <li>Apart from mentioned browser local storage is also used to retain 
+          the notes.
         </li>
       </ul>
     </div>
