@@ -49,6 +49,8 @@ export default function Footer() {
             </div>
             {/* <!-- Grid column --> */}
 
+            <hr className="w-100 clearfix d-md-none" />
+            
             {/* <!-- Grid column --> */}
             <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
               <h6 className="text-uppercase mb-4 fw-bold">Connect with me
