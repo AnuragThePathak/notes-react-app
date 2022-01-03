@@ -4,7 +4,7 @@
     "email": "anuragpathak911@gmail.com"
   },
   "name": "notes-react-app",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "homepage": ".",
   "private": true,
   "dependencies": {
