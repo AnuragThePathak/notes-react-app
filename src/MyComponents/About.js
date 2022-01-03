@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 function About() {
   return (
@@ -9,12 +9,12 @@ function About() {
 
       <ul className={"container"}>
         <li>React and React-router-dom used in making this app.</li>
-        <li>Apart from mentioned browser local storage is also used to retain 
+        <li>Apart from mentioned browser local storage is also used to retain
           the notes.
         </li>
       </ul>
     </div>
-  );
+  )
 }
 
-export default About;
+export default About
