@@ -1,10 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import './index.css'
+import { BrowserRouter } from 'react-router-dom'
 import App from './App'
-import * as serviceWorkerRegistration from './serviceWorkerRegistration'
+import './index.css'
 import reportWebVitals from './reportWebVitals'
-import { BrowserRouter } from "react-router-dom"
+import * as serviceWorkerRegistration from './serviceWorkerRegistration'
 
 ReactDOM.render(
   <React.StrictMode>
