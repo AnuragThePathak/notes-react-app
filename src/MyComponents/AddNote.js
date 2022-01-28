@@ -1,13 +1,15 @@
-import React, {useState} from 'react';
-import {Button, Form} from "react-bootstrap";
+import React, { useState } from 'react'
+import { Button, Form } from "react-bootstrap"
 
 function AddNote(props) {
   const [title, setTitle] = useState("")
   const [description, setDescription] = useState("")
 
-  function addNote() {
+  function addNote(e) {
+    e.preventDefault()
+
     if (title || description) {
-      const note = {title: title, description: description}
+      const note = { title: title, description: description }
       props.addNote(note)
 
       setTitle("")
@@ -27,14 +29,14 @@ function AddNote(props) {
           <Form.Label>Title</Form.Label>
           <Form.Control type="text" placeholder="Enter title" onChange={event => {
             setTitle(event.target.value)
-          }}/>
+          }} value={title} />
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="formBasicDescription">
           <Form.Label>Description</Form.Label>
           <Form.Control as="textarea" placeholder="Enter description" onChange={event => {
             setDescription(event.target.value)
-          }}/>
+          }} value={description} />
         </Form.Group>
 
         <Button variant="primary" type="submit">
@@ -45,4 +47,4 @@ function AddNote(props) {
   )
 }
 
-export default AddNote;
+export default AddNote
