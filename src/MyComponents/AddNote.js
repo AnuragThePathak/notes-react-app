@@ -9,7 +9,7 @@ function AddNote(props) {
     e.preventDefault()
 
     if (title || description) {
-      const note = { title: title, description: description }
+      const note = { title, description }
       props.addNote(note)
 
       setTitle("")
@@ -27,16 +27,18 @@ function AddNote(props) {
       <Form onSubmit={addNote}>
         <Form.Group className="mb-3" controlId="formBasicTitle">
           <Form.Label>Title</Form.Label>
-          <Form.Control type="text" placeholder="Enter title" onChange={event => {
-            setTitle(event.target.value)
-          }} value={title} />
+          <Form.Control type="text" placeholder="Enter title"
+            onChange={event => {
+              setTitle(event.target.value)
+            }} value={title} />
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="formBasicDescription">
           <Form.Label>Description</Form.Label>
-          <Form.Control as="textarea" placeholder="Enter description" onChange={event => {
-            setDescription(event.target.value)
-          }} value={description} />
+          <Form.Control as="textarea" placeholder="Enter description"
+            onChange={event => {
+              setDescription(event.target.value)
+            }} value={description} />
         </Form.Group>
 
         <Button variant="primary" type="submit">
